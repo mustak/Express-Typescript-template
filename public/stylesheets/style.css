@@ -1,8 +1,14 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.main {
+	max-width: 800px;
+	width: 100%;
+	margin: 3rem auto;
+	padding: 0 1rem;
 }
 
-a {
-  color: #00B7FF;
+/* Full height image header */
+.bgimg-1 {
+	background-position: center;
+	background-size: cover;
+	background-image: url('/images/mac.jpg');
+	min-height: 100%;
 }

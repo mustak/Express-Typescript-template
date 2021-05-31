@@ -32,3 +32,4 @@ A Node, Express and Typescript template with Nunjucks view engine.
 1.	Add support for .env:
 	-	`npm i dotenv`
 	-	Update script: `"dev": "nodemon -r dotenv/config ./bin/www.ts",`
+1.	Add nunjuck views
