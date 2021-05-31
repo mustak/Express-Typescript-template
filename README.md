@@ -27,3 +27,5 @@ A Node, Express and Typescript template with Nunjucks view engine.
 	-	@types/node
 	-	@types/nunjucks
 	-	`npm i -D @types/cookie-parser @types/debug @types/express @types/http-errors @types/morgan @types/node @types/nunjucks`
+1.	Create tsconfig.json file:
+	-	`./node_modules/.bin/tsc --init`
