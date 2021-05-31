@@ -29,3 +29,6 @@ A Node, Express and Typescript template with Nunjucks view engine.
 	-	`npm i -D @types/cookie-parser @types/debug @types/express @types/http-errors @types/morgan @types/node @types/nunjucks`
 1.	Create tsconfig.json file:
 	-	`./node_modules/.bin/tsc --init`
+1.	Add support for .env:
+	-	`npm i dotenv`
+	-	Update script: `"dev": "nodemon -r dotenv/config ./bin/www.ts",`
