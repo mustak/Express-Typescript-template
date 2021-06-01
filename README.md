@@ -33,3 +33,39 @@ A Node, Express and Typescript template with Nunjucks view engine.
 	-	`npm i dotenv`
 	-	Update script: `"dev": "nodemon -r dotenv/config ./bin/www.ts",`
 1.	Add nunjuck views
+1.	Add support for eslint and prettier
+	-	`npm i -D eslint`
+	-	`npx eslint --init`
+	-	modify `.eslint.js` to use esm: `export default config;`
+
+
+## [Robert Cooper](https://robertcooper.me/post/using-eslint-and-prettier-in-a-typescript-project)
+-	`npm i -D prettier eslint-config-prettier eslint-plugin-prettier`
+-	add .prettierrc.js with:
+	```
+	module.exports = {
+		"parser": "typescript",,
+		semi: true,
+		trailingComma: "all",
+		singleQuote: true,
+		printWidth: 120,
+		tabWidth: 4,
+		
+	};
+	```
+-	update `.eslintrc.js`:
+	```
+	extends: [
+		"plugin:react/recommended",
+		"plugin:@typescript-eslint/recommended", 
+		"prettier/@typescript-eslint",
+		"plugin:prettier/recommended" 
+  	],
+	```
+
+# Misc
+[dev.to](https://dev.to/nabeelahmed1721/setting-up-typescript-with-eslint-prettier-on-vscode-25na)
+-	eslint-config-standard
+-	eslint-plugin-node
+-	eslint-plugin-promise
+-	ts-node-dev
