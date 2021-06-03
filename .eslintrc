@@ -9,6 +9,7 @@
         "plugin:@typescript-eslint/recommended",
         "airbnb-base",
         "prettier/@typescript-eslint",
+        "plugin:node/recommended",
         "plugin:prettier/recommended"
     ],
     "parser": "@typescript-eslint/parser",
@@ -18,9 +19,11 @@
     },
     "plugins": ["@typescript-eslint", "prettier"],
     "rules": {
+        "prettier/prettier": "warn",
         "quotes": ["error", "single"],
         "no-console": ["error", { "allow": ["warn", "error"] }],
-        "eqeqeq": ["error", "always"]
+        "eqeqeq": ["error", "always"],
+        "no-var":"error"
     },
     "root": true
 }
